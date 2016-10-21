@@ -17,6 +17,10 @@
     <modules>
         <module>cloud-config-server</module>
         <module>cloud-config-client</module>
+        <module>cloud-eureka-server</module>
+        <module>cloud-simple-service</module>
+        <module>cloud-eureka-service</module>
+        <module>cloud-eureka-consumer</module>
     </modules>
 
     <repositories>
