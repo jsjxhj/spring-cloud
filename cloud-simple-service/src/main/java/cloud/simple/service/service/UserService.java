@@ -1,4 +1,4 @@
-package cloud.simple.service.domain;
+package cloud.simple.service.service;
 
 import java.util.List;
 
