@@ -10,17 +10,21 @@
     </parent>
 
     <groupId>com.owen.springcloud</groupId>
-    <artifactId>springcloud</artifactId>
+    <artifactId>spring-cloud</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <modules>
         <module>cloud-config-server</module>
         <module>cloud-config-client</module>
+
         <module>cloud-eureka-server</module>
-        <module>cloud-simple-service</module>
+
         <module>cloud-eureka-service</module>
         <module>cloud-eureka-consumer</module>
+        
+        <module>cloud-simple-service</module>
+        <module>cloud-simple-ui</module>
     </modules>
 
     <repositories>
