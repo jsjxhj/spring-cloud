@@ -25,6 +25,8 @@
 
         <module>cloud-simple-service</module>
         <module>cloud-simple-ui</module>
+
+        <module>cloud-hystrix</module>
     </modules>
 
     <repositories>
