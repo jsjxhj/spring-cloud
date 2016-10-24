@@ -3,7 +3,7 @@ package com.owen.springcloud.cloudhystrix;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
-import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * Created by owen on 16/5/1.
@@ -11,11 +11,11 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
  * EnableHystrixDashboard注解表示启动对hystrix的监控
  */
 @SpringBootApplication
+@EnableDiscoveryClient
 @EnableCircuitBreaker
-@EnableHystrixDashboard
-public class CloudHystrixApplication {
+public class CloudTurbineNode02Application {
 
     public static void main(String[] args) {
-        new SpringApplicationBuilder(CloudHystrixApplication.class).web(true).run(args);
+        new SpringApplicationBuilder(CloudTurbineNode02Application.class).web(true).run(args);
     }
 }

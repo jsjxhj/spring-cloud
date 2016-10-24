@@ -27,6 +27,11 @@
         <module>cloud-simple-ui</module>
 
         <module>cloud-hystrix</module>
+
+        <module>cloud-turbine-eureka-server</module>
+        <module>cloud-turbine-node01</module>
+        <module>cloud-turbine-node02</module>
+        <module>cloud-turbine</module>
     </modules>
 
     <repositories>

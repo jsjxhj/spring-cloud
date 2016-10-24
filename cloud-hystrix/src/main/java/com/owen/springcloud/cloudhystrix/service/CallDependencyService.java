@@ -13,21 +13,23 @@ import java.util.Random;
 public class CallDependencyService {
 
     private Random random = new Random();
+
     /**
      * 模拟获取用户信息(通过网络调用)
+     *
      * @return
      */
     @HystrixCommand(fallbackMethod = "fallback")
-    public String mockGetUserInfo(){
-        int randomInt= random.nextInt(10) ;
-        if(randomInt<8){  //模拟调用失败情况
+    public String mockGetUserInfo() {
+        int randomInt = random.nextInt(10);
+        if (randomInt < 8) {  //模拟调用失败情况
             throw new RuntimeException("call dependency service fail.");
-        }else{
-            return "UserName:owen;number:"+randomInt;
+        } else {
+            return "UserName:owen;number:" + randomInt;
         }
     }
 
-    public String fallback(){
+    public String fallback() {
         return "some exception occur call fallback method.";
     }
 }
