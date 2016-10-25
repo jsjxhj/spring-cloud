@@ -10,17 +10,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-//import cloud.simple.service.UserServiceProvider.FeignUserService;
-
-
 @RestController
 public class UserController {
 
     @Autowired
     UserService userService;
-
-    //@Autowired
-    //FeignUserService feignUserService;
 
     @RequestMapping(value = "/users")
     public ResponseEntity<List<User>> readUserInfo() {
