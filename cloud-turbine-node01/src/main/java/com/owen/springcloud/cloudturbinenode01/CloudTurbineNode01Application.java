@@ -1,4 +1,4 @@
-package com.owen.springcloud.cloudturbinenode1;
+package com.owen.springcloud.cloudturbinenode01;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;

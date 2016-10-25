@@ -1,6 +1,6 @@
-package com.owen.springcloud.cloudturbinenode1.controller;
+package com.owen.springcloud.cloudturbinenode01.controller;
 
-import com.owen.springcloud.cloudturbinenode1.service.HelloService;
+import com.owen.springcloud.cloudturbinenode01.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
