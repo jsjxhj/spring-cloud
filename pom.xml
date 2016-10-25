@@ -32,6 +32,13 @@
         <module>cloud-turbine-node01</module>
         <module>cloud-turbine-node02</module>
         <module>cloud-turbine</module>
+
+        <module>cloud-ribbon</module>
+        <module>cloud-ribbon-eureka</module>
+
+        <module>cloud-ribbon-eureka-server</module>
+        <module>cloud-ribbon-eureka-service</module>
+        <module>cloud-ribbon-eureka-consumer</module>
     </modules>
 
     <repositories>
