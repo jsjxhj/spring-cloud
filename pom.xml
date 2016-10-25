@@ -39,6 +39,8 @@
         <module>cloud-ribbon-eureka-server</module>
         <module>cloud-ribbon-eureka-service</module>
         <module>cloud-ribbon-eureka-consumer</module>
+
+        <module>cloud-feign</module>
     </modules>
 
     <repositories>

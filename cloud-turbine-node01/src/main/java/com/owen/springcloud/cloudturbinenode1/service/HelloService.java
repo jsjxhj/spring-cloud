@@ -1,4 +1,4 @@
-package com.owen.springcloud.cloudhystrix.service;
+package com.owen.springcloud.cloudturbinenode1.service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.stereotype.Service;

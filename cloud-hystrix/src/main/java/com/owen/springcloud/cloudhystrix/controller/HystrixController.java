@@ -1,6 +1,6 @@
 package com.owen.springcloud.cloudhystrix.controller;
 
-import com.owen.springcloud.cloudhystrix.service.HystrixService;
+import com.owen.springcloud.cloudturbinenode1.service.HystrixService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

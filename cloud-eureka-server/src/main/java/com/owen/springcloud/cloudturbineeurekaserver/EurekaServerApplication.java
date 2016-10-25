@@ -1,4 +1,4 @@
-package com.owen.springcloud.cloudeurekaserver;
+package com.owen.springcloud.cloudturbineeurekaserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

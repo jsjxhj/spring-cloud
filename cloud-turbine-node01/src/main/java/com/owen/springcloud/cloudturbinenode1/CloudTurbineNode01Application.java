@@ -1,4 +1,4 @@
-package com.owen.springcloud.cloudhystrix;
+package com.owen.springcloud.cloudturbinenode1;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -13,9 +13,9 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableCircuitBreaker
-public class CloudTurbineNode02Application {
+public class CloudTurbineNode01Application {
 
     public static void main(String[] args) {
-        new SpringApplicationBuilder(CloudTurbineNode02Application.class).web(true).run(args);
+        new SpringApplicationBuilder(CloudTurbineNode01Application.class).web(true).run(args);
     }
 }

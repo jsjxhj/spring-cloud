@@ -1,10 +1,9 @@
-package com.owen.springcloud.cloudhystrix;
+package com.owen.springcloud.cloudturbinenode02;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 
 /**
  * Created by owen on 16/5/1.
@@ -14,9 +13,9 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableCircuitBreaker
-public class CloudTurbineNode01Application {
+public class CloudTurbineNode02Application {
 
     public static void main(String[] args) {
-        new SpringApplicationBuilder(CloudTurbineNode01Application.class).web(true).run(args);
+        new SpringApplicationBuilder(CloudTurbineNode02Application.class).web(true).run(args);
     }
 }
