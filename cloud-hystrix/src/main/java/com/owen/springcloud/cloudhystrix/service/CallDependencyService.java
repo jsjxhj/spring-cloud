@@ -1,6 +1,7 @@
 package com.owen.springcloud.cloudhystrix.service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.stereotype.Component;
 
 import java.util.Random;
@@ -16,10 +17,14 @@ public class CallDependencyService {
 
     /**
      * 模拟获取用户信息(通过网络调用)
+     * execution.isolation.strategy 默认使用THREAD
      *
      * @return
      */
-    @HystrixCommand(fallbackMethod = "fallback")
+    @HystrixCommand(fallbackMethod = "fallback", 
+                    commandProperties = {
+                        @HystrixProperty(name = "execution.isolation.strategy", value = "SEMAPHORE")
+                    })
     public String mockGetUserInfo() {
         int randomInt = random.nextInt(10);
         if (randomInt < 8) {  //模拟调用失败情况

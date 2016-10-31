@@ -42,6 +42,7 @@
         <module>cloud-ribbon-eureka-feign-consumer</module>
 
         <module>cloud-feign</module>
+        <module>cloud-zuul</module>
     </modules>
 
     <repositories>
